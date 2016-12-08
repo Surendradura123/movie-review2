@@ -1,0 +1,171 @@
+<!Doctype html>
+<html lang="en">
+<head>
+ <title>Latest Movies</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+ <script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="main">
+ <h1 style="color:blue; text-align:center;">International 5 star Movie Review</h1>
+  </div>
+	
+	
+  <nav class="navbar navbar-inverse  ">
+  <div class="container-fluid">
+		 <div class="navbar-header"> 
+				 <a class="navbar-brand" href="index.html">Home</a>
+			</div>
+   
+    <ul class="nav navbar-nav">
+      <li><a href="latest movie.html">Latest Movies</a></li>
+      <li><a href="account.html">Account</a></li>
+      <li><a href="login.html">Log In</a></li>
+    </ul>
+    <form class="navbar-form navbar-left">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="account.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+  </div>
+</nav>
+		
+      <div id="site_content">		
+      	<div class="slideshow">
+          <li class="show"><img width="100%" height="300" src="images/movie-reviews.png" alt="&quot;Rent all the latest DVD&quot;" /></li> 
+	 			 </div>	
+  		</div>
+	</div>
+	
+		 		<div>
+         <h1 style="text-align:center;">
+           Welcome to our Official Page
+         </h1>
+       </div>
+	<div class="main page">
+		
+		<div class="page" style="
+   			 float: left;
+					width:80%;
+    			height: 100%;">
+			<div class="container">
+				 <div class="row">
+    				<div class="col-sm-4">
+   							<div class="img">
+									 <a target="_blank"><img src="images/arrival.jpg" alt="Movies" width="300" height="300"</a>
+										 <div class="desc"><b>Arrival</b></div>
+		 
+     									<body>
+				 								<div id="demo1"></div>
+													<button type="button" onclick="loadXMLDoc1()">View Details</button>
+															<script>
+															function loadXMLDoc1() {
+								  						var xhttp = new XMLHttpRequest();
+														  xhttp.onreadystatechange = function() {
+								  					  if (xhttp.readyState == 4 && xhttp.status == 200) {
+								   				   document.getElementById("demo1").innerHTML = xhttp.responseText;
+								  				  }
+								 						 };
+													  xhttp.open("GET", "arrival.xml", true);
+													  xhttp.send();
+														}
+														</script>
+				 							</body>
+								</div>
+   					</div>
+						<div class="col-sm-4">
+  			 <div class="img">
+						 <a target="_blank"><img src="images/badsanta2.jpg" alt="Movies" width="300" height="300"></a>
+								<div class="desc"><b>Bad Santa 2</b></div>
+								<body>
+				 					<div id="demo2"></div>
+										<button type="button" onclick="loadXMLDoc2()">View Details</button>
+										<script>
+										function loadXMLDoc2() {
+									  var xhttp = new XMLHttpRequest();
+								 		 xhttp.onreadystatechange = function() {
+								    if (xhttp.readyState == 4 && xhttp.status == 200) {
+								      document.getElementById("demo2").innerHTML = xhttp.responseText;
+								    }
+								 	 };
+								  	xhttp.open("GET", "badsanta2.xml", true);
+								 		 xhttp.send();
+										}
+									</script>
+						 		</body>
+			    </div>
+  		 </div>
+				 		<div class="col-sm-4">
+
+   <div class="img">
+					 <a target="_blank"><img src="images/sully.jpg" alt="Movies" width="300" height="300"></a>
+					 <div class="desc"><b>Sully</b></div>
+					 	<body>
+				 	<div id="demo3"></div>
+
+						<button type="button" onclick="loadXMLDoc3()">View Details</button>
+
+						<script>
+								function loadXMLDoc3() {
+								  var xhttp = new XMLHttpRequest();
+								  xhttp.onreadystatechange = function() {
+								    if (xhttp.readyState == 4 && xhttp.status == 200) {
+								      document.getElementById("demo3").innerHTML = xhttp.responseText;
+								    }
+								  };
+								  xhttp.open("GET", "sully.xml", true);
+								  xhttp.send();
+								}
+						</script>
+				 </body>
+				</div>
+				</div>
+	</div>
+		</div>
+			</div>
+			<div class="ads" style="
+    		float:right;
+				width:20%
+    		height: 100%; ">
+			<div class="sidebar_container">       
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h2>Message</h2>
+            <p>Welcome to our new website</p>
+          </div>
+		  </div>					  
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h2>Latest Release</h2>
+            <p>December 2016</p>         
+		  </div> 
+        </div>
+        <div class="sidebar">
+          <div class="sidebar_item">
+            <h2>Contact</h2>
+            <p>Phone: +353 872345678</p>
+            <p>Email: <a href="719480573@qq.com">719480573@qq.com</a></a></p>
+          </div>
+        </div>
+       </div>	
+			
+		</div>
+	</div>
+	
+		
+	
+	
+</body>
+
+</html>
